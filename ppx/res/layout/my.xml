@@ -1,0 +1,263 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:gravity="center_horizontal"
+        android:stretchColumns="0,3" >
+
+        <!-- 独占一行 -->
+
+
+        <!-- 用TableRow独占一行，需要设置跨4列 -->
+
+        <TableRow android:background="#ffffff" >
+
+            <com.example.ppx.CicleImageView
+                android:id="@+id/imageview"
+                android:layout_width="100px"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_span="4"
+                android:src="@drawable/logo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ececec" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ececec" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ececec" />
+
+        <TableRow android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:lineSpacingExtra="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:text="昵称   "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="right"
+                android:lineSpacingExtra="15dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:text="宁海静"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="left"
+                android:lineSpacingExtra="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="性别  "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="right"
+                android:lineSpacingExtra="15dp"
+                android:paddingRight="20dp"
+                android:text="女"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ececec" />
+
+        <TableRow android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="left"
+                android:lineSpacingExtra="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="员工编号"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="right"
+                android:lineSpacingExtra="15dp"
+                android:paddingRight="18dp"
+                android:text="00001"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ececec" />
+
+        <TableRow android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="left"
+                android:lineSpacingExtra="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="个人销售额 "
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="right"
+                android:lineSpacingExtra="15dp"
+                android:paddingRight="20dp"
+                android:text="222"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="left"
+                android:lineSpacingExtra="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="手机号"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="right"
+                android:lineSpacingExtra="15dp"
+                android:paddingRight="20dp"
+                android:text="1360921950"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ececec" />
+
+        <TableRow android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="left"
+                android:lineSpacingExtra="15dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="微信"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="right"
+                android:lineSpacingExtra="15dp"
+                android:paddingRight="20dp"
+                android:text="soul"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_span="4"
+                android:background="#f39900"
+                android:text="退出登录" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- 有图有文字:button设为@null、drawableTop(drawableBottom)设样式、text设值 -->
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/dianying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/movie"
+            android:gravity="center_horizontal"
+            android:text="电影" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/user"
+            android:gravity="center_horizontal"
+            android:text="管理用户" />
+
+        <RadioButton
+            android:id="@+id/wode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/my_blue"
+            android:gravity="center_horizontal"
+            android:text="我的" />
+    </RadioGroup>
+
+</FrameLayout>

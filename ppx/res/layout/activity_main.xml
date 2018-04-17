@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    android:stretchColumns="0,3" >
+
+    <!-- 独占一行 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:gravity="center_horizontal" />
+    <!-- 用TableRow独占一行，需要设置跨4列 -->
+
+    <TableRow>
+
+        <!-- 或改为352*131，则不会拉伸 -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="100px"
+            android:layout_span="4"
+            android:gravity="center_horizontal"
+            android:src="@drawable/logo" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:gravity="left"
+            android:text="用户名    "
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:minWidth="260px"
+            android:text="admin"
+            android:textSize="15sp" />
+
+        <TextView />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="密     码 "
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="10px"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:text="pass"
+            android:textSize="15sp" />
+
+        <TextView />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_marginTop="20px"
+            android:layout_span="2"
+            android:background="#6985b5"
+            android:onClick="chooseReceiver"
+            android:text="登     录"
+            android:textSize="15sp" />
+
+        <TextView />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+</TableLayout>
